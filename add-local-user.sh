@@ -18,9 +18,7 @@ read -p 'Enter the user name: ' USER_NAME
 
 read -p 'Enter the name of the account holder: ' COMMENT
 
-# Get the password
 
-read -p 'Select a password: ' PASSWORD
 
 # Create the user with the password
 
@@ -35,7 +33,10 @@ else
     echo "Not able to create new user "
 	exit 1
 fi
-	
+
+# Get the password
+
+read -p 'Select a password: ' PASSWORD	
 
 # Set the password
 
